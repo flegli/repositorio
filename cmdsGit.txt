@@ -1,6 +1,8 @@
 - Git init: inicia um repositorio GIT.
 - Git status: verifica alterações na branch.
+- Git rm -f: remove um arquivo.
 - Git add: coloca arquivo com alterações na area de stage.
            git add .: coloca todos os arquivos alterados na stage.
            git add <arquivoExemplo>: coloca o arquivo, arquivoExemplo, na area de stage.
+- Git checkout -- <arquivoExemplo>: descarte das alterações, antes do cmd 'git add'.
 - Git commit -m 'mensagem': faz o commit ja adicionando a mensagem.
