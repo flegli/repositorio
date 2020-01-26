@@ -1,0 +1,3 @@
+- Git init: inicia um repositorio GIT.
+- Git status: verifica alterações na branch.
+- 
