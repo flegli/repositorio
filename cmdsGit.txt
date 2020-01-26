@@ -1,3 +1,3 @@
 - Git init: inicia um repositorio GIT.
 - Git status: verifica alterações na branch.
-- 
+- Git add: coloca arquivo com alterações na area de stage
