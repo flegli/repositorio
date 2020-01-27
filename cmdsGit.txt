@@ -13,4 +13,5 @@
             git remote add origin <url>: adicionar repositorio remoto.
 - Git push: envio de arquivos para repositorio remoto
             git push --set-upstream origin master: equalizando a branch master local com o repositorio remoto.
-            
+- Git clone <url>: comando para clonar repositorios.
+- Git pull: atualiza o repositorio local com a ultima versão do servidor.
