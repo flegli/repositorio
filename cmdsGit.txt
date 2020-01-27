@@ -8,3 +8,9 @@
 - Git commit -m 'mensagem': faz o commit ja adicionando a mensagem.
 - Git config --global credential.helper 'store': Comando para criar credenciais de login no GitHub.
             Criar o arquivo, '.git-credentials' e inserir a linha: https://user:pass@github.com
+- Git remote: Para conectar com repositorios remotos.
+            git remote -v: para verificar repositorios remotos ja configurados.
+            git remote add origin <url>: adicionar repositorio remoto.
+- Git push: envio de arquivos para repositorio remoto
+            git push --set-upstream origin master: equalizando a branch master local com o repositorio remoto.
+            
