@@ -20,3 +20,25 @@
 - Git clone <url>: comando para clonar repositorios.
 - Git pull: atualiza o repositorio local com a ultima versão do servidor.
 - Git fetch: informa difrenças entre a branch local e o servidor.
+* Comando para mostrar a branch que atual, inserir no ./bash_profile:
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch) $ "
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+- Git log: listagem com todos os commits que foram feitos na branch. Para sair tecle "q".
+- Git tag: para marcar commit como releases. exemplo:
+    git push (sobe alterações)
+    git tag <versao> (marca a ultima alteração com a <versão>)
+    git --tags (sobe a tag para o servidor)
+- Git branch: criar branches.
+    git branch <nome branch> (cria branch);
+    git branch (lista as branches)
+    git branch -D <nomeBranch> (apaga a branch "nomeBranch")
+- Git checkout (branches):
+    git checkout -b <nomeBranch> (Muda da branch atual para a "nomeBranch")
+        Caso no ambiente local não exita a nomeBranch e esta exita no servidor será criada esta branchno ambiente local.
+- Git merge: equalizando branches
+    entrar na branch a ser atualizada (master);
+    git merge <nomeBranch> (atualiza a branch atual com a nomeBranch)
