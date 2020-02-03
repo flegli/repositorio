@@ -42,3 +42,7 @@ parse_git_branch() {
 - Git merge: equalizando branches
     entrar na branch a ser atualizada (master);
     git merge <nomeBranch> (atualiza a branch atual com a nomeBranch)
+- Git log: historico de commits
+- Git Rebase: assistir novamente
+- Git cherry-pic: selecionar e retornar a detrminados commits
+    git cherry-pic <rash>
